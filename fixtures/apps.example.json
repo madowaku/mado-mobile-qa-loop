@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "package": "com.example.alpha",
+      "name": "Alpha",
+      "scenario": "launch-only"
+    },
+    {
+      "package": "com.example.beta",
+      "name": "Beta",
+      "scenario": "launch-only"
+    }
+  ]
+}
