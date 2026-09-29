@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mado-mobile-qa-loop"
+version = "0.0.1"
+description = "Evidence-first Android QA runner for human testers"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+mmql = "mmql.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mmql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
